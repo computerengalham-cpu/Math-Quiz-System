@@ -1,0 +1,249 @@
+
+/* nav bar media query  */
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+    margin-top: 109px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+ 
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    margin-top: 130px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+    margin: 130px auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    margin: 130px auto;
+    padding-inline: 15px;
+  }
+}
+/* *******************************  Nav media query*************************************** */
+
+@media screen and (min-width: 1400px) {
+nav ul li a {
+  font-size: 20px;
+}
+}
+@media screen and (max-width: 1200px) {
+
+  nav .fa-bars {
+    display: block;
+    font-size: 30px;
+  }
+  nav ul li.close{
+    font-size: 25px;
+    text-align: end;
+  }
+  nav ul {
+    font-size: 20px;
+    background-color: #fff;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    transform: translateX(100%); 
+  }
+
+
+  body:has(#nav-links:target) nav ul a .fa-xmark {
+    display: block;
+  }
+  body:has(#nav-links:target) nav  {
+
+      height: 100vh;
+      background-color: #ffffffb2;
+    
+  }
+
+ 
+}
+
+/* *******************************  home media query*************************************** */
+
+@media screen and (min-width: 1200px) {
+  header  {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  header .container > * {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .container .home-text {
+    margin: 10px 0;
+  }
+  .home .btns-group .table-button {
+    border-radius: 100vh 100vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .home-text .btns-group {
+    flex-direction: column;
+  }
+}
+/* *******************************  chefs media query*************************************** */
+
+@media screen and (min-width: 1200px) {
+  .chefs .container {
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .chefs .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .chefs .card {
+    min-width: 45%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .chefs .cards {
+    flex-direction: column;
+  }
+  .chefs .cards .card {
+    width: 100%;
+  }
+}
+
+/* *******************************  Gallery media query*************************************** */
+
+@media screen and (min-width: 1400px) {
+  .gallery-imgs {
+    height: 1150px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .gallery-imgs {
+    height: 1025px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-imgs {
+    height: 850px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-imgs {
+    height: 1400px;
+  }
+  .gallery-imgs picture {
+    width: calc(calc(100% - 20px) / 2);
+  }
+
+  picture.pizza {
+    order: 1;
+  }
+  picture.burger {
+    order: 2;
+  }
+  picture.pizza-slice {
+    order: 3;
+  }
+  picture.chease {
+    order: 4;
+  }
+  picture.meat {
+    order: 5;
+  }
+  picture.cheaken {
+    order: 6;
+  }
+
+  picture.kofta {
+    order: 7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-imgs {
+    height: auto;
+  }
+  .gallery-imgs picture {
+    width: 100%;
+  }
+}
+
+/* *******************************  Contact media query*************************************** */
+
+@media screen and (max-width: 768px) {
+  .contact .contact-info {
+    flex-direction: column;
+  }
+  .contact .contact-info .contact-record,
+  .contact input.name,
+  .contact input.email {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+/* *******************************  Footer media query*************************************** */
+
+@media screen and (max-width: 1200px) {
+  .footer .part {
+    order: 1;
+    width: 48%;
+  }
+  .footer .part2 {
+    margin: 10px 0;
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .part,
+  .footer .part2 {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .footer .part2 .footer-inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer .part2 .footer-inputs > * {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
